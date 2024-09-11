@@ -1,0 +1,1829 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous" />
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"
+			defer></script>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="./style.css" />
+		<!-- <script src="./script.js" defer></script> -->
+		<title>Document</title>
+	</head>
+	<body class="d-flex">
+		<nav class="navbar d-none d-lg-flex flex-column justify-content-start" id="sidebar">
+			<a class="navbar-brand" href="./index.html"> 💪 WERK </a>
+			<hr class="navbar-divider" />
+			<div class="">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a
+							class="nav-link collapsed"
+							href="#sidebar-projects"
+							data-bs-toggle="collapse"
+							role="button"
+							aria-expanded="false"
+							aria-controls="sidebar-projects">
+							<i class="bi bi-briefcase"></i>
+							Projects
+						</a>
+						<div class="collapse" id="sidebar-projects">
+							<ul class="nav nav-lg flex-column">
+								<li class="nav-item">
+									<a href="/pages/projects/overview.html" class="nav-link"
+										>Overview</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/grid-view.html" class="nav-link"
+										>Grid View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/table-view.html" class="nav-link"
+										>Table View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/details.html" class="nav-link"
+										>Details</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/create-project.html" class="nav-link"
+										>Create Project</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link collapsed"
+							href="#sidebar-files"
+							data-bs-toggle="collapse"
+							role="button"
+							aria-expanded="false"
+							aria-controls="sidebar-files">
+							<i class="bi bi-file-earmark"></i>
+							Files
+						</a>
+						<div class="collapse" id="sidebar-files">
+							<ul class="nav nav-lg flex-column">
+								<li class="nav-item">
+									<a href="/pages/projects/overview.html" class="nav-link"
+										>Overview</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/grid-view.html" class="nav-link"
+										>Grid View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/table-view.html" class="nav-link"
+										>Table View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/details.html" class="nav-link"
+										>Details</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/create-project.html" class="nav-link"
+										>Create Project</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link collapsed"
+							href="#sidebar-integrations"
+							data-bs-toggle="collapse"
+							role="button"
+							aria-expanded="false"
+							aria-controls="sidebar-integrations">
+							<i class="bi bi-plug"></i>
+							Integrations
+						</a>
+						<div class="collapse" id="sidebar-integrations">
+							<ul class="nav nav-lg flex-column">
+								<li class="nav-item">
+									<a href="/pages/projects/overview.html" class="nav-link"
+										>Overview</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/grid-view.html" class="nav-link"
+										>Grid View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/table-view.html" class="nav-link"
+										>Table View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/details.html" class="nav-link"
+										>Details</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/create-project.html" class="nav-link"
+										>Create Project</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link collapsed"
+							href="#sidebar-users"
+							data-bs-toggle="collapse"
+							role="button"
+							aria-expanded="false"
+							aria-controls="sidebar-users">
+							<i class="bi bi-people"></i>
+							Users
+						</a>
+						<div class="collapse" id="sidebar-users">
+							<ul class="nav nav-lg flex-column">
+								<li class="nav-item">
+									<a href="./user.html" class="nav-link"
+										>Profile</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/grid-view.html" class="nav-link"
+										>Table View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/table-view.html" class="nav-link"
+										>Permissions</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link collapsed"
+							href="#sidebar-analytics"
+							data-bs-toggle="collapse"
+							role="button"
+							aria-expanded="false"
+							aria-controls="sidebar-analytics">
+							<i class="bi bi-bar-chart"></i>
+							Analytics
+						</a>
+						<div class="collapse" id="sidebar-analytics">
+							<ul class="nav nav-lg flex-column">
+								<li class="nav-item">
+									<a href="/pages/projects/overview.html" class="nav-link"
+										>Overview</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/grid-view.html" class="nav-link"
+										>Grid View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/table-view.html" class="nav-link"
+										>Table View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/details.html" class="nav-link"
+										>Details</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/create-project.html" class="nav-link"
+										>Create Project</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link collapsed"
+							href="#sidebar-logistics"
+							data-bs-toggle="collapse"
+							role="button"
+							aria-expanded="false"
+							aria-controls="sidebar-logistics">
+							<i class="bi bi-truck"></i>
+							Logistics
+						</a>
+						<div class="collapse" id="sidebar-logistics">
+							<ul class="nav nav-lg flex-column">
+								<li class="nav-item">
+									<a href="/pages/projects/overview.html" class="nav-link"
+										>Overview</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/grid-view.html" class="nav-link"
+										>Grid View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/table-view.html" class="nav-link"
+										>Table View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/details.html" class="nav-link"
+										>Details</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/create-project.html" class="nav-link"
+										>Create Project</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link collapsed"
+							href="#sidebar-settings"
+							data-bs-toggle="collapse"
+							role="button"
+							aria-expanded="false"
+							aria-controls="sidebar-settings">
+							<i class="bi bi-gear"></i>
+							Setting
+						</a>
+						<div class="collapse" id="sidebar-settings">
+							<ul class="nav nav-lg flex-column">
+								<li class="nav-item">
+									<a href="/pages/projects/overview.html" class="nav-link"
+										>Overview</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/grid-view.html" class="nav-link"
+										>Grid View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/table-view.html" class="nav-link"
+										>Table View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/details.html" class="nav-link"
+										>Details</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/create-project.html" class="nav-link"
+										>Create Project</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link collapsed"
+							href="#sidebar-authentication"
+							data-bs-toggle="collapse"
+							role="button"
+							aria-expanded="false"
+							aria-controls="sidebar-authentication">
+							<i class="bi bi-lock"></i>
+							Authentication
+						</a>
+						<div class="collapse" id="sidebar-authentication">
+							<ul class="nav nav-lg flex-column">
+								<li class="nav-item">
+									<a href="/pages/projects/overview.html" class="nav-link"
+										>Overview</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/grid-view.html" class="nav-link"
+										>Grid View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/table-view.html" class="nav-link"
+										>Table View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/details.html" class="nav-link"
+										>Details</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/create-project.html" class="nav-link"
+										>Create Project</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<hr class="navbar-divider" />
+		</nav>
+    <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvasSidebar" aria-labelledby="offcanvasSidebarLabel">
+      <div class="offcanvas-header">
+        <a class="navbar-brand" href="./index.html">
+          <h5 class="offcanvas-title" id="offcanvasSidebarLabel">💪 WERK</h5>
+        </a>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a
+							class="nav-link collapsed"
+							href="#sidebar-projects"
+							data-bs-toggle="collapse"
+							role="button"
+							aria-expanded="false"
+							aria-controls="sidebar-projects">
+							<i class="bi bi-briefcase"></i>
+							Projects
+						</a>
+						<div class="collapse" id="sidebar-projects">
+							<ul class="nav nav-lg flex-column">
+								<li class="nav-item">
+									<a href="/pages/projects/overview.html" class="nav-link"
+										>Overview</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/grid-view.html" class="nav-link"
+										>Grid View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/table-view.html" class="nav-link"
+										>Table View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/details.html" class="nav-link"
+										>Details</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/create-project.html" class="nav-link"
+										>Create Project</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link collapsed"
+							href="#sidebar-files"
+							data-bs-toggle="collapse"
+							role="button"
+							aria-expanded="false"
+							aria-controls="sidebar-files">
+							<i class="bi bi-file-earmark"></i>
+							Files
+						</a>
+						<div class="collapse" id="sidebar-files">
+							<ul class="nav nav-lg flex-column">
+								<li class="nav-item">
+									<a href="/pages/projects/overview.html" class="nav-link"
+										>Overview</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/grid-view.html" class="nav-link"
+										>Grid View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/table-view.html" class="nav-link"
+										>Table View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/details.html" class="nav-link"
+										>Details</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/create-project.html" class="nav-link"
+										>Create Project</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link collapsed"
+							href="#sidebar-integrations"
+							data-bs-toggle="collapse"
+							role="button"
+							aria-expanded="false"
+							aria-controls="sidebar-integrations">
+							<i class="bi bi-plug"></i>
+							Integrations
+						</a>
+						<div class="collapse" id="sidebar-integrations">
+							<ul class="nav nav-lg flex-column">
+								<li class="nav-item">
+									<a href="/pages/projects/overview.html" class="nav-link"
+										>Overview</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/grid-view.html" class="nav-link"
+										>Grid View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/table-view.html" class="nav-link"
+										>Table View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/details.html" class="nav-link"
+										>Details</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/create-project.html" class="nav-link"
+										>Create Project</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link collapsed"
+							href="#sidebar-users"
+							data-bs-toggle="collapse"
+							role="button"
+							aria-expanded="false"
+							aria-controls="sidebar-users">
+							<i class="bi bi-people"></i>
+							Users
+						</a>
+						<div class="collapse" id="sidebar-users">
+							<ul class="nav nav-lg flex-column">
+								<li class="nav-item">
+									<a href="/pages/projects/overview.html" class="nav-link"
+										>Profile</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/grid-view.html" class="nav-link"
+										>Table View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/table-view.html" class="nav-link"
+										>Permissions</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link collapsed"
+							href="#sidebar-analytics"
+							data-bs-toggle="collapse"
+							role="button"
+							aria-expanded="false"
+							aria-controls="sidebar-analytics">
+							<i class="bi bi-bar-chart"></i>
+							Analytics
+						</a>
+						<div class="collapse" id="sidebar-analytics">
+							<ul class="nav nav-lg flex-column">
+								<li class="nav-item">
+									<a href="/pages/projects/overview.html" class="nav-link"
+										>Overview</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/grid-view.html" class="nav-link"
+										>Grid View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/table-view.html" class="nav-link"
+										>Table View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/details.html" class="nav-link"
+										>Details</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/create-project.html" class="nav-link"
+										>Create Project</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link collapsed"
+							href="#sidebar-logistics"
+							data-bs-toggle="collapse"
+							role="button"
+							aria-expanded="false"
+							aria-controls="sidebar-logistics">
+							<i class="bi bi-truck"></i>
+							Logistics
+						</a>
+						<div class="collapse" id="sidebar-logistics">
+							<ul class="nav nav-lg flex-column">
+								<li class="nav-item">
+									<a href="/pages/projects/overview.html" class="nav-link"
+										>Overview</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/grid-view.html" class="nav-link"
+										>Grid View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/table-view.html" class="nav-link"
+										>Table View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/details.html" class="nav-link"
+										>Details</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/create-project.html" class="nav-link"
+										>Create Project</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link collapsed"
+							href="#sidebar-settings"
+							data-bs-toggle="collapse"
+							role="button"
+							aria-expanded="false"
+							aria-controls="sidebar-settings">
+							<i class="bi bi-gear"></i>
+							Setting
+						</a>
+						<div class="collapse" id="sidebar-settings">
+							<ul class="nav nav-lg flex-column">
+								<li class="nav-item">
+									<a href="/pages/projects/overview.html" class="nav-link"
+										>Overview</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/grid-view.html" class="nav-link"
+										>Grid View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/table-view.html" class="nav-link"
+										>Table View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/details.html" class="nav-link"
+										>Details</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/create-project.html" class="nav-link"
+										>Create Project</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link collapsed"
+							href="#sidebar-authentication"
+							data-bs-toggle="collapse"
+							role="button"
+							aria-expanded="false"
+							aria-controls="sidebar-authentication">
+							<i class="bi bi-lock"></i>
+							Authentication
+						</a>
+						<div class="collapse" id="sidebar-authentication">
+							<ul class="nav nav-lg flex-column">
+								<li class="nav-item">
+									<a href="/pages/projects/overview.html" class="nav-link"
+										>Overview</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/grid-view.html" class="nav-link"
+										>Grid View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/table-view.html" class="nav-link"
+										>Table View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/details.html" class="nav-link"
+										>Details</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/create-project.html" class="nav-link"
+										>Create Project</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<hr class="navbar-divider" />
+		</div>
+		<div class="p-4 container-fluid" style="background: #f5f9fc">
+			<nav class="navbar navbar-expand bg-body-tertiary mb-3">
+				<div class="container-fluid" style="background: white">
+					<!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> -->
+          <button class="btn btn-outline-secondary d-lg-none me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSidebar" aria-controls="offcanvasSidebar">
+            <i class="bi bi-list"></i>
+          </button>
+      
+					<div
+						class="collapse navbar-collapse d-flex align-items-center"
+						id="navbarSupportedContent"
+						style="background: white">
+						<form class="d-flex me-auto" role="search">
+							<input
+								class="form-control"
+								type="search"
+								placeholder="Search"
+								aria-label="Search" />
+						</form>
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#">
+									<i class="bi bi-bell"></i>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">
+									<i class="bi bi-envelope"></i>
+								</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link"
+									href="#"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false">
+									<img
+										src="https:thispersondoesnotexist.com"
+										alt="mdo"
+										width="50"
+										height="50"
+										class="rounded-circle" />
+								</a>
+								<ul class="dropdown-menu dropdown-menu-end">
+									<li><a class="dropdown-item" href="#">Action</a></li>
+									<li><a class="dropdown-item" href="#">Another action</a></li>
+									<li><hr class="dropdown-divider" /></li>
+									<li>
+										<a class="dropdown-item" href="#">Something else here</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<div class="card">
+				<div class="card-header d-flex align-items-center">
+					<h5 class="mb-0">Overview Activity</h5>
+					<button class="btn btn-sm btn-neutral ms-auto">Export</button>
+				</div>
+				<div class="px-4 m-auto">
+					<div id="chart-line" data-height="300" style="min-height: 315px">
+						<div
+							id="apexchartshw7ugjkh"
+							class="apexcharts-canvas apexchartshw7ugjkh apexcharts-theme-light"
+							style="width: 725px; height: 300px">
+							<svg
+								id="SvgjsSvg8660"
+								width="725"
+								height="300"
+								xmlns="http://www.w3.org/2000/svg"
+								version="1.1"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+								xmlns:svgjs="http://svgjs.dev"
+								class="apexcharts-svg"
+								xmlns:data="ApexChartsNS"
+								transform="translate(0, 0)"
+								style="background: transparent">
+								<g
+									id="SvgjsG8662"
+									class="apexcharts-inner apexcharts-graphical"
+									transform="translate(48.203125, 30)">
+									<defs id="SvgjsDefs8661">
+										<clipPath id="gridRectMaskhw7ugjkh">
+											<rect
+												id="SvgjsRect8668"
+												width="661.98779296875"
+												height="234.73000000000002"
+												x="-4"
+												y="-2"
+												rx="0"
+												ry="0"
+												opacity="1"
+												stroke-width="0"
+												stroke="none"
+												stroke-dasharray="0"
+												fill="#fff"></rect>
+										</clipPath>
+										<clipPath id="forecastMaskhw7ugjkh"></clipPath>
+										<clipPath id="nonForecastMaskhw7ugjkh"></clipPath>
+										<clipPath id="gridRectMarkerMaskhw7ugjkh">
+											<rect
+												id="SvgjsRect8669"
+												width="657.98779296875"
+												height="234.73000000000002"
+												x="-2"
+												y="-2"
+												rx="0"
+												ry="0"
+												opacity="1"
+												stroke-width="0"
+												stroke="none"
+												stroke-dasharray="0"
+												fill="#fff"></rect>
+										</clipPath>
+									</defs>
+									<line
+										id="SvgjsLine8667"
+										x1="0"
+										y1="0"
+										x2="0"
+										y2="230.73000000000002"
+										stroke="#b6b6b6"
+										stroke-dasharray="3"
+										stroke-linecap="butt"
+										class="apexcharts-xcrosshairs"
+										x="0"
+										y="0"
+										width="1"
+										height="230.73000000000002"
+										fill="#b1b9c4"
+										filter="none"
+										fill-opacity="0.9"
+										stroke-width="1"></line>
+									<g
+										id="SvgjsG8691"
+										class="apexcharts-xaxis"
+										transform="translate(0, 0)">
+										<g
+											id="SvgjsG8692"
+											class="apexcharts-xaxis-texts-g"
+											transform="translate(0, -4)">
+											<text
+												id="SvgjsText8694"
+												font-family="#333333"
+												x="0"
+												y="259.73"
+												text-anchor="middle"
+												dominant-baseline="auto"
+												font-size="13px"
+												font-weight="400"
+												fill="#999999"
+												class="apexcharts-text apexcharts-xaxis-label apexcharts-xaxis-label">
+												<tspan id="SvgjsTspan8695">Jan</tspan>
+												<title>Jan</title>
+											</text>
+											<text
+												id="SvgjsText8697"
+												font-family="#333333"
+												x="65.398779296875"
+												y="259.73"
+												text-anchor="middle"
+												dominant-baseline="auto"
+												font-size="13px"
+												font-weight="400"
+												fill="#999999"
+												class="apexcharts-text apexcharts-xaxis-label apexcharts-xaxis-label">
+												<tspan id="SvgjsTspan8698">Feb</tspan>
+												<title>Feb</title>
+											</text>
+											<text
+												id="SvgjsText8700"
+												font-family="#333333"
+												x="130.79755859375"
+												y="259.73"
+												text-anchor="middle"
+												dominant-baseline="auto"
+												font-size="13px"
+												font-weight="400"
+												fill="#999999"
+												class="apexcharts-text apexcharts-xaxis-label apexcharts-xaxis-label">
+												<tspan id="SvgjsTspan8701">Mar</tspan>
+												<title>Mar</title>
+											</text>
+											<text
+												id="SvgjsText8703"
+												font-family="#333333"
+												x="196.196337890625"
+												y="259.73"
+												text-anchor="middle"
+												dominant-baseline="auto"
+												font-size="13px"
+												font-weight="400"
+												fill="#999999"
+												class="apexcharts-text apexcharts-xaxis-label apexcharts-xaxis-label">
+												<tspan id="SvgjsTspan8704">Apr</tspan>
+												<title>Apr</title>
+											</text>
+											<text
+												id="SvgjsText8706"
+												font-family="#333333"
+												x="261.5951171875"
+												y="259.73"
+												text-anchor="middle"
+												dominant-baseline="auto"
+												font-size="13px"
+												font-weight="400"
+												fill="#999999"
+												class="apexcharts-text apexcharts-xaxis-label apexcharts-xaxis-label">
+												<tspan id="SvgjsTspan8707">May</tspan>
+												<title>May</title>
+											</text>
+											<text
+												id="SvgjsText8709"
+												font-family="#333333"
+												x="326.99389648437506"
+												y="259.73"
+												text-anchor="middle"
+												dominant-baseline="auto"
+												font-size="13px"
+												font-weight="400"
+												fill="#999999"
+												class="apexcharts-text apexcharts-xaxis-label apexcharts-xaxis-label">
+												<tspan id="SvgjsTspan8710">Jun</tspan>
+												<title>Jun</title>
+											</text>
+											<text
+												id="SvgjsText8712"
+												font-family="#333333"
+												x="392.39267578125003"
+												y="259.73"
+												text-anchor="middle"
+												dominant-baseline="auto"
+												font-size="13px"
+												font-weight="400"
+												fill="#999999"
+												class="apexcharts-text apexcharts-xaxis-label apexcharts-xaxis-label">
+												<tspan id="SvgjsTspan8713">Jul</tspan>
+												<title>Jul</title>
+											</text>
+											<text
+												id="SvgjsText8715"
+												font-family="#333333"
+												x="457.791455078125"
+												y="259.73"
+												text-anchor="middle"
+												dominant-baseline="auto"
+												font-size="13px"
+												font-weight="400"
+												fill="#999999"
+												class="apexcharts-text apexcharts-xaxis-label apexcharts-xaxis-label">
+												<tspan id="SvgjsTspan8716">Aug</tspan>
+												<title>Aug</title>
+											</text>
+											<text
+												id="SvgjsText8718"
+												font-family="#333333"
+												x="523.1902343749999"
+												y="259.73"
+												text-anchor="middle"
+												dominant-baseline="auto"
+												font-size="13px"
+												font-weight="400"
+												fill="#999999"
+												class="apexcharts-text apexcharts-xaxis-label apexcharts-xaxis-label">
+												<tspan id="SvgjsTspan8719">Sep</tspan>
+												<title>Sep</title>
+											</text>
+											<text
+												id="SvgjsText8721"
+												font-family="#333333"
+												x="588.5890136718749"
+												y="259.73"
+												text-anchor="middle"
+												dominant-baseline="auto"
+												font-size="13px"
+												font-weight="400"
+												fill="#999999"
+												class="apexcharts-text apexcharts-xaxis-label apexcharts-xaxis-label">
+												<tspan id="SvgjsTspan8722">Oct</tspan>
+												<title>Oct</title>
+											</text>
+											<text
+												id="SvgjsText8724"
+												font-family="#333333"
+												x="653.9877929687499"
+												y="259.73"
+												text-anchor="middle"
+												dominant-baseline="auto"
+												font-size="13px"
+												font-weight="400"
+												fill="#999999"
+												class="apexcharts-text apexcharts-xaxis-label apexcharts-xaxis-label">
+												<tspan id="SvgjsTspan8725">Nov</tspan>
+												<title>Nov</title>
+											</text>
+										</g>
+									</g>
+									<g id="SvgjsG8679" class="apexcharts-grid">
+										<g id="SvgjsG8680" class="apexcharts-gridlines-horizontal">
+											<line
+												id="SvgjsLine8684"
+												x1="0"
+												y1="46.146"
+												x2="653.98779296875"
+												y2="46.146"
+												stroke="#f3f3f3"
+												stroke-dasharray="3"
+												stroke-linecap="butt"
+												class="apexcharts-gridline"></line>
+											<line
+												id="SvgjsLine8685"
+												x1="0"
+												y1="92.292"
+												x2="653.98779296875"
+												y2="92.292"
+												stroke="#f3f3f3"
+												stroke-dasharray="3"
+												stroke-linecap="butt"
+												class="apexcharts-gridline"></line>
+											<line
+												id="SvgjsLine8686"
+												x1="0"
+												y1="138.438"
+												x2="653.98779296875"
+												y2="138.438"
+												stroke="#f3f3f3"
+												stroke-dasharray="3"
+												stroke-linecap="butt"
+												class="apexcharts-gridline"></line>
+											<line
+												id="SvgjsLine8687"
+												x1="0"
+												y1="184.584"
+												x2="653.98779296875"
+												y2="184.584"
+												stroke="#f3f3f3"
+												stroke-dasharray="3"
+												stroke-linecap="butt"
+												class="apexcharts-gridline"></line>
+										</g>
+										<g
+											id="SvgjsG8681"
+											class="apexcharts-gridlines-vertical"></g>
+										<line
+											id="SvgjsLine8690"
+											x1="0"
+											y1="230.73000000000002"
+											x2="653.98779296875"
+											y2="230.73000000000002"
+											stroke="transparent"
+											stroke-dasharray="0"
+											stroke-linecap="butt"></line>
+										<line
+											id="SvgjsLine8689"
+											x1="0"
+											y1="1"
+											x2="0"
+											y2="230.73000000000002"
+											stroke="transparent"
+											stroke-dasharray="0"
+											stroke-linecap="butt"></line>
+									</g>
+									<g
+										id="SvgjsG8670"
+										class="apexcharts-line-series apexcharts-plot-series">
+										<g
+											id="SvgjsG8671"
+											class="apexcharts-series"
+											seriesName="Ongoing"
+											data:longestSeries="true"
+											rel="1"
+											data:realIndex="0">
+											<path
+												id="SvgjsPath8674"
+												d="M 0 184.584C 22.889572753906247 184.584 42.50920654296874 153.82 65.39877929687499 153.82C 88.28835205078124 153.82 107.90798583984373 123.05600000000001 130.79755859374998 123.05600000000001C 153.68713134765625 123.05600000000001 173.30676513671875 92.292 196.196337890625 92.292C 219.08591064453122 92.292 238.70554443359373 107.674 261.59511718749997 107.674C 284.4846899414062 107.674 304.10432373046876 123.05600000000001 326.993896484375 123.05600000000001C 349.88346923828124 123.05600000000001 369.50310302734374 92.292 392.39267578125 92.292C 415.2822485351562 92.292 434.9018823242187 46.14599999999999 457.79145507812495 46.14599999999999C 480.6810278320312 46.14599999999999 500.3006616210937 76.91 523.1902343749999 76.91C 546.0798071289062 76.91 565.6994409179688 46.14599999999999 588.589013671875 46.14599999999999C 611.4785864257813 46.14599999999999 631.0982202148438 15.382000000000005 653.98779296875 15.382000000000005"
+												fill="none"
+												fill-opacity="1"
+												stroke="rgba(92,96,245,0.85)"
+												stroke-opacity="1"
+												stroke-linecap="butt"
+												stroke-width="4"
+												stroke-dasharray="0"
+												class="apexcharts-line"
+												index="0"
+												clip-path="url(#gridRectMaskhw7ugjkh)"
+												pathTo="M 0 184.584C 22.889572753906247 184.584 42.50920654296874 153.82 65.39877929687499 153.82C 88.28835205078124 153.82 107.90798583984373 123.05600000000001 130.79755859374998 123.05600000000001C 153.68713134765625 123.05600000000001 173.30676513671875 92.292 196.196337890625 92.292C 219.08591064453122 92.292 238.70554443359373 107.674 261.59511718749997 107.674C 284.4846899414062 107.674 304.10432373046876 123.05600000000001 326.993896484375 123.05600000000001C 349.88346923828124 123.05600000000001 369.50310302734374 92.292 392.39267578125 92.292C 415.2822485351562 92.292 434.9018823242187 46.14599999999999 457.79145507812495 46.14599999999999C 480.6810278320312 46.14599999999999 500.3006616210937 76.91 523.1902343749999 76.91C 546.0798071289062 76.91 565.6994409179688 46.14599999999999 588.589013671875 46.14599999999999C 611.4785864257813 46.14599999999999 631.0982202148438 15.382000000000005 653.98779296875 15.382000000000005"
+												pathFrom="M -1 230.73000000000002 L -1 230.73000000000002 L 65.39877929687499 230.73000000000002 L 130.79755859374998 230.73000000000002 L 196.196337890625 230.73000000000002 L 261.59511718749997 230.73000000000002 L 326.993896484375 230.73000000000002 L 392.39267578125 230.73000000000002 L 457.79145507812495 230.73000000000002 L 523.1902343749999 230.73000000000002 L 588.589013671875 230.73000000000002 L 653.98779296875 230.73000000000002"
+												fill-rule="evenodd"></path>
+											<g
+												id="SvgjsG8672"
+												class="apexcharts-series-markers-wrap"
+												data:realIndex="0">
+												<g class="apexcharts-series-markers">
+													<circle
+														id="SvgjsCircle8751"
+														r="0"
+														cx="0"
+														cy="0"
+														class="apexcharts-marker whrhup1rah"
+														stroke="#ffffff"
+														fill="#5c60f5"
+														fill-opacity="1"
+														stroke-width="2"
+														stroke-opacity="0.9"
+														default-marker-size="0"></circle>
+												</g>
+											</g>
+										</g>
+										<g
+											id="SvgjsG8675"
+											class="apexcharts-series"
+											seriesName="Finished"
+											data:longestSeries="true"
+											rel="2"
+											data:realIndex="1">
+											<path
+												id="SvgjsPath8678"
+												d="M 0 153.82C 22.889572753906247 153.82 42.50920654296874 123.05600000000001 65.39877929687499 123.05600000000001C 88.28835205078124 123.05600000000001 107.90798583984373 184.584 130.79755859374998 184.584C 153.68713134765625 184.584 173.30676513671875 199.966 196.196337890625 199.966C 219.08591064453122 199.966 238.70554443359373 215.348 261.59511718749997 215.348C 284.4846899414062 215.348 304.10432373046876 215.348 326.993896484375 215.348C 349.88346923828124 215.348 369.50310302734374 169.202 392.39267578125 169.202C 415.2822485351562 169.202 434.9018823242187 76.91 457.79145507812495 76.91C 480.6810278320312 76.91 500.3006616210937 92.292 523.1902343749999 92.292C 546.0798071289062 92.292 565.6994409179688 76.91 588.589013671875 76.91C 611.4785864257813 76.91 631.0982202148438 46.14599999999999 653.98779296875 46.14599999999999"
+												fill="none"
+												fill-opacity="1"
+												stroke="rgba(255,87,154,0.85)"
+												stroke-opacity="1"
+												stroke-linecap="butt"
+												stroke-width="4"
+												stroke-dasharray="0"
+												class="apexcharts-line"
+												index="1"
+												clip-path="url(#gridRectMaskhw7ugjkh)"
+												pathTo="M 0 153.82C 22.889572753906247 153.82 42.50920654296874 123.05600000000001 65.39877929687499 123.05600000000001C 88.28835205078124 123.05600000000001 107.90798583984373 184.584 130.79755859374998 184.584C 153.68713134765625 184.584 173.30676513671875 199.966 196.196337890625 199.966C 219.08591064453122 199.966 238.70554443359373 215.348 261.59511718749997 215.348C 284.4846899414062 215.348 304.10432373046876 215.348 326.993896484375 215.348C 349.88346923828124 215.348 369.50310302734374 169.202 392.39267578125 169.202C 415.2822485351562 169.202 434.9018823242187 76.91 457.79145507812495 76.91C 480.6810278320312 76.91 500.3006616210937 92.292 523.1902343749999 92.292C 546.0798071289062 92.292 565.6994409179688 76.91 588.589013671875 76.91C 611.4785864257813 76.91 631.0982202148438 46.14599999999999 653.98779296875 46.14599999999999"
+												pathFrom="M -1 230.73000000000002 L -1 230.73000000000002 L 65.39877929687499 230.73000000000002 L 130.79755859374998 230.73000000000002 L 196.196337890625 230.73000000000002 L 261.59511718749997 230.73000000000002 L 326.993896484375 230.73000000000002 L 392.39267578125 230.73000000000002 L 457.79145507812495 230.73000000000002 L 523.1902343749999 230.73000000000002 L 588.589013671875 230.73000000000002 L 653.98779296875 230.73000000000002"
+												fill-rule="evenodd"></path>
+											<g
+												id="SvgjsG8676"
+												class="apexcharts-series-markers-wrap"
+												data:realIndex="1">
+												<g class="apexcharts-series-markers">
+													<circle
+														id="SvgjsCircle8752"
+														r="0"
+														cx="0"
+														cy="0"
+														class="apexcharts-marker wulbnhld"
+														stroke="#ffffff"
+														fill="#ff579a"
+														fill-opacity="1"
+														stroke-width="2"
+														stroke-opacity="0.9"
+														default-marker-size="0"></circle>
+												</g>
+											</g>
+										</g>
+										<g
+											id="SvgjsG8673"
+											class="apexcharts-datalabels"
+											data:realIndex="0"></g>
+										<g
+											id="SvgjsG8677"
+											class="apexcharts-datalabels"
+											data:realIndex="1"></g>
+									</g>
+									<g id="SvgjsG8682" class="apexcharts-grid-borders">
+										<line
+											id="SvgjsLine8683"
+											x1="0"
+											y1="0"
+											x2="653.98779296875"
+											y2="0"
+											stroke="#f3f3f3"
+											stroke-dasharray="3"
+											stroke-linecap="butt"
+											class="apexcharts-gridline"></line>
+										<line
+											id="SvgjsLine8688"
+											x1="0"
+											y1="230.73000000000002"
+											x2="653.98779296875"
+											y2="230.73000000000002"
+											stroke="#f3f3f3"
+											stroke-dasharray="3"
+											stroke-linecap="butt"
+											class="apexcharts-gridline"></line>
+									</g>
+									<line
+										id="SvgjsLine8746"
+										x1="0"
+										y1="0"
+										x2="653.98779296875"
+										y2="0"
+										stroke="#b6b6b6"
+										stroke-dasharray="0"
+										stroke-width="1"
+										stroke-linecap="butt"
+										class="apexcharts-ycrosshairs"></line>
+									<line
+										id="SvgjsLine8747"
+										x1="0"
+										y1="0"
+										x2="653.98779296875"
+										y2="0"
+										stroke-dasharray="0"
+										stroke-width="0"
+										stroke-linecap="butt"
+										class="apexcharts-ycrosshairs-hidden"></line>
+									<g id="SvgjsG8748" class="apexcharts-yaxis-annotations"></g>
+									<g id="SvgjsG8749" class="apexcharts-xaxis-annotations"></g>
+									<g id="SvgjsG8750" class="apexcharts-point-annotations"></g>
+								</g>
+								<rect
+									id="SvgjsRect8666"
+									width="0"
+									height="0"
+									x="0"
+									y="0"
+									rx="0"
+									ry="0"
+									opacity="1"
+									stroke-width="0"
+									stroke="none"
+									stroke-dasharray="0"
+									fill="#fefefe"></rect>
+								<g
+									id="SvgjsG8726"
+									class="apexcharts-yaxis"
+									rel="0"
+									transform="translate(18.203125, 0)">
+									<g id="SvgjsG8727" class="apexcharts-yaxis-texts-g">
+										<text
+											id="SvgjsText8729"
+											font-family="inherit"
+											x="20"
+											y="31.5"
+											text-anchor="end"
+											dominant-baseline="auto"
+											font-size="13px"
+											font-weight="400"
+											fill="#999999"
+											class="apexcharts-text apexcharts-yaxis-label apexcharts-xaxis-label"
+											style="font-family: inherit">
+											<tspan id="SvgjsTspan8730">150</tspan>
+											<title>150</title>
+										</text>
+										<text
+											id="SvgjsText8732"
+											font-family="inherit"
+											x="20"
+											y="77.646"
+											text-anchor="end"
+											dominant-baseline="auto"
+											font-size="13px"
+											font-weight="400"
+											fill="#999999"
+											class="apexcharts-text apexcharts-yaxis-label apexcharts-xaxis-label"
+											style="font-family: inherit">
+											<tspan id="SvgjsTspan8733">120</tspan>
+											<title>120</title>
+										</text>
+										<text
+											id="SvgjsText8735"
+											font-family="inherit"
+											x="20"
+											y="123.792"
+											text-anchor="end"
+											dominant-baseline="auto"
+											font-size="13px"
+											font-weight="400"
+											fill="#999999"
+											class="apexcharts-text apexcharts-yaxis-label apexcharts-xaxis-label"
+											style="font-family: inherit">
+											<tspan id="SvgjsTspan8736">90</tspan>
+											<title>90</title>
+										</text>
+										<text
+											id="SvgjsText8738"
+											font-family="inherit"
+											x="20"
+											y="169.938"
+											text-anchor="end"
+											dominant-baseline="auto"
+											font-size="13px"
+											font-weight="400"
+											fill="#999999"
+											class="apexcharts-text apexcharts-yaxis-label apexcharts-xaxis-label"
+											style="font-family: inherit">
+											<tspan id="SvgjsTspan8739">60</tspan>
+											<title>60</title>
+										</text>
+										<text
+											id="SvgjsText8741"
+											font-family="inherit"
+											x="20"
+											y="216.084"
+											text-anchor="end"
+											dominant-baseline="auto"
+											font-size="13px"
+											font-weight="400"
+											fill="#999999"
+											class="apexcharts-text apexcharts-yaxis-label apexcharts-xaxis-label"
+											style="font-family: inherit">
+											<tspan id="SvgjsTspan8742">30</tspan>
+											<title>30</title>
+										</text>
+										<text
+											id="SvgjsText8744"
+											font-family="inherit"
+											x="20"
+											y="262.23"
+											text-anchor="end"
+											dominant-baseline="auto"
+											font-size="13px"
+											font-weight="400"
+											fill="#999999"
+											class="apexcharts-text apexcharts-yaxis-label apexcharts-xaxis-label"
+											style="font-family: inherit">
+											<tspan id="SvgjsTspan8745">0</tspan>
+											<title>0</title>
+										</text>
+									</g>
+								</g>
+								<g id="SvgjsG8663" class="apexcharts-annotations"></g>
+							</svg>
+							<div class="apexcharts-legend" style="max-height: 150px"></div>
+							<div class="apexcharts-tooltip apexcharts-theme-light">
+								<div
+									class="apexcharts-tooltip-title"
+									style="
+										font-family: Helvetica, Arial, sans-serif;
+										font-size: 12px;
+									"></div>
+								<div class="apexcharts-tooltip-series-group" style="order: 1">
+									<span
+										class="apexcharts-tooltip-marker"
+										style="background-color: rgb(92, 96, 245)"></span>
+									<div
+										class="apexcharts-tooltip-text"
+										style="
+											font-family: Helvetica, Arial, sans-serif;
+											font-size: 12px;
+										">
+										<div class="apexcharts-tooltip-y-group">
+											<span class="apexcharts-tooltip-text-y-label"></span
+											><span class="apexcharts-tooltip-text-y-value"></span>
+										</div>
+										<div class="apexcharts-tooltip-goals-group">
+											<span class="apexcharts-tooltip-text-goals-label"></span
+											><span class="apexcharts-tooltip-text-goals-value"></span>
+										</div>
+										<div class="apexcharts-tooltip-z-group">
+											<span class="apexcharts-tooltip-text-z-label"></span
+											><span class="apexcharts-tooltip-text-z-value"></span>
+										</div>
+									</div>
+								</div>
+								<div class="apexcharts-tooltip-series-group" style="order: 2">
+									<span
+										class="apexcharts-tooltip-marker"
+										style="background-color: rgb(255, 87, 154)"></span>
+									<div
+										class="apexcharts-tooltip-text"
+										style="
+											font-family: Helvetica, Arial, sans-serif;
+											font-size: 12px;
+										">
+										<div class="apexcharts-tooltip-y-group">
+											<span class="apexcharts-tooltip-text-y-label"></span
+											><span class="apexcharts-tooltip-text-y-value"></span>
+										</div>
+										<div class="apexcharts-tooltip-goals-group">
+											<span class="apexcharts-tooltip-text-goals-label"></span
+											><span class="apexcharts-tooltip-text-goals-value"></span>
+										</div>
+										<div class="apexcharts-tooltip-z-group">
+											<span class="apexcharts-tooltip-text-z-label"></span
+											><span class="apexcharts-tooltip-text-z-value"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div
+								class="apexcharts-xaxistooltip apexcharts-xaxistooltip-bottom apexcharts-theme-light">
+								<div
+									class="apexcharts-xaxistooltip-text"
+									style="
+										font-family: Helvetica, Arial, sans-serif;
+										font-size: 12px;
+									"></div>
+							</div>
+							<div
+								class="apexcharts-yaxistooltip apexcharts-yaxistooltip-0 apexcharts-yaxistooltip-left apexcharts-theme-light">
+								<div class="apexcharts-yaxistooltip-text"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="row ">
+				<div class="col-xl-3 col-sm-6 col-12">
+					<div class="card">
+						<div class="card-body">
+							<div class="row">
+								<div class="col">
+									<span class="h6 font-semibold text-muted text-sm d-block mb-2"
+										>Budget</span
+									>
+									<span class="h3 font-bold mb-0">$1000.00</span>
+								</div>
+								<div class="col-auto">
+									<div
+										class="icon icon-shape bg-tertiary text-white text-lg rounded-circle">
+										<i class="bi bi-credit-card"></i>
+									</div>
+								</div>
+							</div>
+							<div class="mt-2 mb-0 text-sm">
+								<span class="badge badge-pill bg-soft-success text-success me-2"
+									><i class="bi bi-arrow-up me-1"></i>50% </span
+								><span class="text-nowrap text-xs text-muted"
+									>Since last month</span
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-sm-6 col-12">
+					<div class="card">
+						<div class="card-body">
+							<div class="row">
+								<div class="col">
+									<span class="h6 font-semibold text-muted text-sm d-block mb-2"
+										>Budget</span
+									>
+									<span class="h3 font-bold mb-0">$750.90</span>
+								</div>
+								<div class="col-auto">
+									<div
+										class="icon icon-shape bg-tertiary text-white text-lg rounded-circle">
+										<i class="bi bi-credit-card"></i>
+									</div>
+								</div>
+							</div>
+							<div class="mt-2 mb-0 text-sm">
+								<span class="badge badge-pill bg-soft-success text-success me-2"
+									><i class="bi bi-arrow-up me-1"></i>30% </span
+								><span class="text-nowrap text-xs text-muted"
+									>Since last month</span
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-sm-6 col-12">
+					<div class="card">
+						<div class="card-body">
+							<div class="row">
+								<div class="col">
+									<span class="h6 font-semibold text-muted text-sm d-block mb-2"
+										>Budget</span
+									>
+									<span class="h3 font-bold mb-0">$750.90</span>
+								</div>
+								<div class="col-auto">
+									<div
+										class="icon icon-shape bg-tertiary text-white text-lg rounded-circle">
+										<i class="bi bi-credit-card"></i>
+									</div>
+								</div>
+							</div>
+							<div class="mt-2 mb-0 text-sm">
+								<span class="badge badge-pill bg-soft-success text-success me-2"
+									><i class="bi bi-arrow-up me-1"></i>30% </span
+								><span class="text-nowrap text-xs text-muted"
+									>Since last month</span
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-sm-6 col-12">
+					<div class="card">
+						<div class="card-body">
+							<div class="row">
+								<div class="col">
+									<span class="h6 font-semibold text-muted text-sm d-block mb-2"
+										>Budget</span
+									>
+									<span class="h3 font-bold mb-0">$750.90</span>
+								</div>
+								<div class="col-auto">
+									<div
+										class="icon icon-shape bg-tertiary text-white text-lg rounded-circle">
+										<i class="bi bi-credit-card"></i>
+									</div>
+								</div>
+							</div>
+							<div class="mt-2 mb-0 text-sm">
+								<span class="badge badge-pill bg-soft-success text-success me-2"
+									><i class="bi bi-arrow-up me-1"></i>30% </span
+								><span class="text-nowrap text-xs text-muted"
+									>Since last month</span
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> -->
+      <div class="row mt-4">
+        <div class="col-xl-3 col-sm-6 col-12">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title font-semibold text-muted text-sm d-block mb-2">Budget</h5>
+              <p class="card-text h3 font-bold mb-0">$1000.00</p>
+              <div class="mt-2 mb-0 text-sm">
+                <span class="badge badge-pill bg-soft-success text-success me-2"
+                  ><i class="bi bi-arrow-up me-1"></i>50% </span
+                ><span class="text-nowrap text-xs text-muted"
+                  >Since last month</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 col-12">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title font-semibold text-muted text-sm d-block mb-2">Projects</h5>
+              <p class="card-text h3 font-bold mb-0">200</p>
+              <div class="mt-2 mb-0 text-sm">
+                <span class="badge badge-pill bg-soft-success text-success me-2"
+                  ><i class="bi bi-arrow-up me-1"></i>15% </span
+                ><span class="text-nowrap text-xs text-muted"
+                  >Since last month</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 col-12">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title font-semibold text-muted text-sm d-block mb-2">Total Hours</h5>
+              <p class="card-text h3 font-bold mb-0">1500</p>
+              <div class="mt-2 mb-0 text-sm">
+                <span class="badge badge-pill bg-soft-success text-success me-2"
+                  ><i class="bi bi-arrow-up me-1"></i>25% </span
+                ><span class="text-nowrap text-xs text-muted"
+                  >Since last month</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 col-12">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title font-semibold text-muted text-sm d-block mb-2">Performance</h5>
+              <p class="card-text h3 font-bold mb-0">93%</p>
+              <div class="mt-2 mb-0 text-sm">
+                <span class="badge badge-pill bg-soft-success text-success me-2"
+                  ><i class="bi bi-arrow-up me-1"></i>2% </span
+                ><span class="text-nowrap text-xs text-muted"
+                  >Since last month</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="table-responsive ">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">Project</th>
+              <th scope="col">Due Date</th>
+              <th scope="col">Status</th>
+              <th scope="col">Team</th>
+              <th scope="col">Progress</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>
+                <a href="javascript:void(0)">Project 1</a>
+              </th>
+              <td>12/05/2025</td>
+              <td>
+                <span class="badge text-warning p-0">Ongoing</span>
+              </td>
+              <td>
+                <img
+                  alt="image"
+                  src="https://thispersondoesnotexist.com" width="25"
+                  class="avatar avatar-md rounded-circle"
+                />
+                <img
+                  alt="image"
+                  src="https://thispersondoesnotexist.com" width="25"
+                  class="avatar avatar-md rounded-circle"
+                />
+                <img
+                  alt="image"
+                  src="https://thispersondoesnotexist.com" width="25"
+                  class="avatar avatar-md rounded-circle"
+                />
+              </td>
+              <td>
+                <div class="d-flex align-items-center">
+                  <span class="me-2">50%</span>
+                  <div>
+                    <div class="progress" style="width: 100px">
+                      <div
+                        class="progress-bar bg-warning"
+                        role="progressbar"
+                        style="width: 50%"
+                        aria-valuenow="50"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a href="javascript:void(0)">Project 2</a>
+              </th>
+              <td>10/03/2024</td>
+              <td>
+                <span class="badge text-danger p-0">At Risk</span>
+              </td>
+              <td>
+                <img
+                  alt="image"
+                  src="https://thispersondoesnotexist.com" width="25"
+                  class="avatar avatar-md rounded-circle"
+                />
+                <img
+                  alt="image"
+                  src="https://thispersondoesnotexist.com" width="25"
+                  class="avatar avatar-md rounded-circle"
+                />
+                <img
+                  alt="image"
+                  src="https://thispersondoesnotexist.com" width="25"
+                  class="avatar avatar-md rounded-circle"
+                />
+              </td>
+              <td>
+                <div class="d-flex align-items-center">
+                  <span class="me-2">12%</span>
+                  <div>
+                    <div class="progress" style="width: 100px">
+                      <div
+                        class="progress-bar bg-danger"
+                        role="progressbar"
+                        style="width: 12%"
+                        aria-valuenow="12"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a href="javascript:void(0)">Project 3</a>
+              </th>
+              <td>11/03/2024</td>
+              <td>
+                <span class="badge text-warning p-0">Ongoing</span>
+              </td>
+              <td>
+                <img
+                  alt="image"
+                  src="https://thispersondoesnotexist.com" width="25"
+                  class="avatar avatar-md rounded-circle"
+                />
+                <img
+                  alt="image"
+                  src="https://thispersondoesnotexist.com" width="25"
+                  class="avatar avatar-md rounded-circle"
+                />
+                <img
+                  alt="image"
+                  src="https://thispersondoesnotexist.com" width="25"
+                  class="avatar avatar-md rounded-circle"
+                />
+              </td>
+              <td>
+                <div class="d-flex align-items-center">
+                  <span class="me-2">80%</span>
+                  <div>
+                    <div class="progress" style="width: 100px">
+                      <div
+                        class="progress-bar bg-warning"
+                        role="progressbar"
+                        style="width: 80%"
+                        aria-valuenow="12"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a href="javascript:void(0)">Project 4</a>
+              </th>
+              <td>12/02/2024</td>
+              <td>
+                <span class="badge text-success p-0">Finished</span>
+              </td>
+              <td>
+                <img
+                  alt="image"
+                  src="https://thispersondoesnotexist.com" width="25"
+                  class="avatar avatar-md rounded-circle"
+                />
+                <img
+                  alt="image"
+                  src="https://thispersondoesnotexist.com" width="25"
+                  class="avatar avatar-md rounded-circle"
+                />
+                <img
+                  alt="image"
+                  src="https://thispersondoesnotexist.com" width="25"
+                  class="avatar avatar-md rounded-circle"
+                />
+              </td>
+              <td>
+                <div class="d-flex align-items-center">
+                  <span class="me-2">100%</span>
+                  <div>
+                    <div class="progress" style="width: 100px">
+                      <div
+                        class="progress-bar bg-success"
+                        role="progressbar"
+                        style="width: 100%"
+                        aria-valuenow="100"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a href="javascript:void(0)">Project 5</a>
+              </th>
+              <td>9/03/2024</td>
+              <td>
+                <span class="badge text-success p-0">Finished</span>
+              </td>
+              <td>
+                <img
+                  alt="image"
+                  src="https://thispersondoesnotexist.com" width="25"
+                  class="avatar avatar-md rounded-circle"
+                />
+                <img
+                  alt="image"
+                  src="https://thispersondoesnotexist.com" width="25"
+                  class="avatar avatar-md rounded-circle"
+                />
+                <img
+                  alt="image"
+                  src="https://thispersondoesnotexist.com" width="25"
+                  class="avatar avatar-md rounded-circle"
+                />
+              </td>
+              <td>
+                <div class="d-flex align-items-center">
+                  <span class="me-2">100%</span>
+                  <div>
+                    <div class="progress" style="width: 100px">
+                      <div
+                        class="progress-bar bg-success"
+                        role="progressbar"
+                        style="width: 100%"
+                        aria-valuenow="100"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a href="javascript:void(0)">Project 6</a>
+              </th>
+              <td>10/03/2024</td>
+              <td>
+                <span class="badge text-warning p-0">Ongoing</span>
+              </td>
+              <td>
+                <img
+                  alt="image"
+                  src="https://thispersondoesnotexist.com" width="25"
+                  class="avatar avatar-md rounded-circle"
+                />
+                <img
+                  alt="image"
+                  src="https://thispersondoesnotexist.com" width="25"
+                  class="avatar avatar-md rounded-circle"
+                />
+                <img
+                  alt="image"
+                  src="https://thispersondoesnotexist.com" width="25"
+                  class="avatar avatar-md rounded-circle"
+                />
+              </td>
+              <td>
+                <div class="d-flex align-items-center">
+                  <span class="me-2">73%</span>
+                  <div>
+                    <div class="progress" style="width: 100px">
+                      <div
+                        class="progress-bar bg-warning"
+                        role="progressbar"
+                        style="width: 73%"
+                        aria-valuenow="73"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+        </table>
+      </div>
+		</div>
+	</body>
+</html>

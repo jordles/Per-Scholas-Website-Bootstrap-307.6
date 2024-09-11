@@ -1,0 +1,39 @@
+*{
+  box-sizing: border-box;
+}
+
+html, body{
+  min-height: 100vh;
+}
+
+.nav-link[data-bs-toggle=collapse]:after {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 16 16' fill='%2316192C' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+}
+
+#sidebar{
+  width: 300px;
+}
+
+tbody td span{
+  min-width: 40px;
+  text-align: right;
+}
+
+.card {
+  margin-bottom: 2rem; /* Ensures consistent bottom margin */
+}
+
+div[style="background: white"] i:not(i[class="bi bi-list"]){
+  font-size: 2rem;
+}
+
+.icon-circle {
+  width: 35px; /* Adjust size as needed */
+  height: 35px; /* Adjust size as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgb(118, 224, 47); /* Change background color as needed */
+  color: #fff; /* Icon color */
+}

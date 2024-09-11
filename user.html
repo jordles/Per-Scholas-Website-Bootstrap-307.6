@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous" />
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"
+			defer></script>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="./style.css" />
+		<!-- <script src="./script.js" defer></script> -->
+		<title>Document</title>
+	</head>
+	<body class="d-flex">
+		<nav class="navbar d-none d-lg-flex flex-column justify-content-start" id="sidebar">
+			<a class="navbar-brand" href="./index.html"> 💪 WERK </a>
+			<hr class="navbar-divider" />
+			<div class="">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a
+							class="nav-link collapsed"
+							href="#sidebar-projects"
+							data-bs-toggle="collapse"
+							role="button"
+							aria-expanded="false"
+							aria-controls="sidebar-projects">
+							<i class="bi bi-briefcase"></i>
+							Projects
+						</a>
+						<div class="collapse" id="sidebar-projects">
+							<ul class="nav nav-lg flex-column">
+								<li class="nav-item">
+									<a href="/pages/projects/overview.html" class="nav-link"
+										>Overview</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/grid-view.html" class="nav-link"
+										>Grid View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/table-view.html" class="nav-link"
+										>Table View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/details.html" class="nav-link"
+										>Details</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/create-project.html" class="nav-link"
+										>Create Project</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link collapsed"
+							href="#sidebar-files"
+							data-bs-toggle="collapse"
+							role="button"
+							aria-expanded="false"
+							aria-controls="sidebar-files">
+							<i class="bi bi-file-earmark"></i>
+							Files
+						</a>
+						<div class="collapse" id="sidebar-files">
+							<ul class="nav nav-lg flex-column">
+								<li class="nav-item">
+									<a href="/pages/projects/overview.html" class="nav-link"
+										>Overview</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/grid-view.html" class="nav-link"
+										>Grid View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/table-view.html" class="nav-link"
+										>Table View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/details.html" class="nav-link"
+										>Details</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/create-project.html" class="nav-link"
+										>Create Project</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link collapsed"
+							href="#sidebar-integrations"
+							data-bs-toggle="collapse"
+							role="button"
+							aria-expanded="false"
+							aria-controls="sidebar-integrations">
+							<i class="bi bi-plug"></i>
+							Integrations
+						</a>
+						<div class="collapse" id="sidebar-integrations">
+							<ul class="nav nav-lg flex-column">
+								<li class="nav-item">
+									<a href="/pages/projects/overview.html" class="nav-link"
+										>Overview</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/grid-view.html" class="nav-link"
+										>Grid View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/table-view.html" class="nav-link"
+										>Table View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/details.html" class="nav-link"
+										>Details</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/create-project.html" class="nav-link"
+										>Create Project</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link collapsed"
+							href="#sidebar-users"
+							data-bs-toggle="collapse"
+							role="button"
+							aria-expanded="false"
+							aria-controls="sidebar-users">
+							<i class="bi bi-people"></i>
+							Users
+						</a>
+						<div class="collapse" id="sidebar-users">
+							<ul class="nav nav-lg flex-column">
+								<li class="nav-item">
+									<a href="/pages/projects/overview.html" class="nav-link"
+										>Profile</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/grid-view.html" class="nav-link"
+										>Table View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/table-view.html" class="nav-link"
+										>Permissions</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link collapsed"
+							href="#sidebar-analytics"
+							data-bs-toggle="collapse"
+							role="button"
+							aria-expanded="false"
+							aria-controls="sidebar-analytics">
+							<i class="bi bi-bar-chart"></i>
+							Analytics
+						</a>
+						<div class="collapse" id="sidebar-analytics">
+							<ul class="nav nav-lg flex-column">
+								<li class="nav-item">
+									<a href="/pages/projects/overview.html" class="nav-link"
+										>Overview</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/grid-view.html" class="nav-link"
+										>Grid View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/table-view.html" class="nav-link"
+										>Table View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/details.html" class="nav-link"
+										>Details</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/create-project.html" class="nav-link"
+										>Create Project</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link collapsed"
+							href="#sidebar-logistics"
+							data-bs-toggle="collapse"
+							role="button"
+							aria-expanded="false"
+							aria-controls="sidebar-logistics">
+							<i class="bi bi-truck"></i>
+							Logistics
+						</a>
+						<div class="collapse" id="sidebar-logistics">
+							<ul class="nav nav-lg flex-column">
+								<li class="nav-item">
+									<a href="/pages/projects/overview.html" class="nav-link"
+										>Overview</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/grid-view.html" class="nav-link"
+										>Grid View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/table-view.html" class="nav-link"
+										>Table View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/details.html" class="nav-link"
+										>Details</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/create-project.html" class="nav-link"
+										>Create Project</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link collapsed"
+							href="#sidebar-settings"
+							data-bs-toggle="collapse"
+							role="button"
+							aria-expanded="false"
+							aria-controls="sidebar-settings">
+							<i class="bi bi-gear"></i>
+							Setting
+						</a>
+						<div class="collapse" id="sidebar-settings">
+							<ul class="nav nav-lg flex-column">
+								<li class="nav-item">
+									<a href="/pages/projects/overview.html" class="nav-link"
+										>Overview</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/grid-view.html" class="nav-link"
+										>Grid View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/table-view.html" class="nav-link"
+										>Table View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/details.html" class="nav-link"
+										>Details</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/create-project.html" class="nav-link"
+										>Create Project</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link collapsed"
+							href="#sidebar-authentication"
+							data-bs-toggle="collapse"
+							role="button"
+							aria-expanded="false"
+							aria-controls="sidebar-authentication">
+							<i class="bi bi-lock"></i>
+							Authentication
+						</a>
+						<div class="collapse" id="sidebar-authentication">
+							<ul class="nav nav-lg flex-column">
+								<li class="nav-item">
+									<a href="/pages/projects/overview.html" class="nav-link"
+										>Overview</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/grid-view.html" class="nav-link"
+										>Grid View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/table-view.html" class="nav-link"
+										>Table View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/details.html" class="nav-link"
+										>Details</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/create-project.html" class="nav-link"
+										>Create Project</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<hr class="navbar-divider" />
+		</nav>
+    <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvasSidebar" aria-labelledby="offcanvasSidebarLabel">
+      <div class="offcanvas-header">
+        <a class="navbar-brand" href="./index.html">
+          <h5 class="offcanvas-title" id="offcanvasSidebarLabel">💪 WERK</h5>
+        </a>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a
+							class="nav-link collapsed"
+							href="#sidebar-projects"
+							data-bs-toggle="collapse"
+							role="button"
+							aria-expanded="false"
+							aria-controls="sidebar-projects">
+							<i class="bi bi-briefcase"></i>
+							Projects
+						</a>
+						<div class="collapse" id="sidebar-projects">
+							<ul class="nav nav-lg flex-column">
+								<li class="nav-item">
+									<a href="/pages/projects/overview.html" class="nav-link"
+										>Overview</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/grid-view.html" class="nav-link"
+										>Grid View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/table-view.html" class="nav-link"
+										>Table View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/details.html" class="nav-link"
+										>Details</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/create-project.html" class="nav-link"
+										>Create Project</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link collapsed"
+							href="#sidebar-files"
+							data-bs-toggle="collapse"
+							role="button"
+							aria-expanded="false"
+							aria-controls="sidebar-files">
+							<i class="bi bi-file-earmark"></i>
+							Files
+						</a>
+						<div class="collapse" id="sidebar-files">
+							<ul class="nav nav-lg flex-column">
+								<li class="nav-item">
+									<a href="/pages/projects/overview.html" class="nav-link"
+										>Overview</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/grid-view.html" class="nav-link"
+										>Grid View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/table-view.html" class="nav-link"
+										>Table View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/details.html" class="nav-link"
+										>Details</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/create-project.html" class="nav-link"
+										>Create Project</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link collapsed"
+							href="#sidebar-integrations"
+							data-bs-toggle="collapse"
+							role="button"
+							aria-expanded="false"
+							aria-controls="sidebar-integrations">
+							<i class="bi bi-plug"></i>
+							Integrations
+						</a>
+						<div class="collapse" id="sidebar-integrations">
+							<ul class="nav nav-lg flex-column">
+								<li class="nav-item">
+									<a href="/pages/projects/overview.html" class="nav-link"
+										>Overview</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/grid-view.html" class="nav-link"
+										>Grid View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/table-view.html" class="nav-link"
+										>Table View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/details.html" class="nav-link"
+										>Details</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/create-project.html" class="nav-link"
+										>Create Project</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link collapsed"
+							href="#sidebar-users"
+							data-bs-toggle="collapse"
+							role="button"
+							aria-expanded="false"
+							aria-controls="sidebar-users">
+							<i class="bi bi-people"></i>
+							Users
+						</a>
+						<div class="collapse" id="sidebar-users">
+							<ul class="nav nav-lg flex-column">
+								<li class="nav-item">
+									<a href="/pages/projects/overview.html" class="nav-link"
+										>Profile</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/grid-view.html" class="nav-link"
+										>Table View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/table-view.html" class="nav-link"
+										>Permissions</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link collapsed"
+							href="#sidebar-analytics"
+							data-bs-toggle="collapse"
+							role="button"
+							aria-expanded="false"
+							aria-controls="sidebar-analytics">
+							<i class="bi bi-bar-chart"></i>
+							Analytics
+						</a>
+						<div class="collapse" id="sidebar-analytics">
+							<ul class="nav nav-lg flex-column">
+								<li class="nav-item">
+									<a href="/pages/projects/overview.html" class="nav-link"
+										>Overview</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/grid-view.html" class="nav-link"
+										>Grid View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/table-view.html" class="nav-link"
+										>Table View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/details.html" class="nav-link"
+										>Details</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/create-project.html" class="nav-link"
+										>Create Project</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link collapsed"
+							href="#sidebar-logistics"
+							data-bs-toggle="collapse"
+							role="button"
+							aria-expanded="false"
+							aria-controls="sidebar-logistics">
+							<i class="bi bi-truck"></i>
+							Logistics
+						</a>
+						<div class="collapse" id="sidebar-logistics">
+							<ul class="nav nav-lg flex-column">
+								<li class="nav-item">
+									<a href="/pages/projects/overview.html" class="nav-link"
+										>Overview</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/grid-view.html" class="nav-link"
+										>Grid View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/table-view.html" class="nav-link"
+										>Table View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/details.html" class="nav-link"
+										>Details</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/create-project.html" class="nav-link"
+										>Create Project</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link collapsed"
+							href="#sidebar-settings"
+							data-bs-toggle="collapse"
+							role="button"
+							aria-expanded="false"
+							aria-controls="sidebar-settings">
+							<i class="bi bi-gear"></i>
+							Setting
+						</a>
+						<div class="collapse" id="sidebar-settings">
+							<ul class="nav nav-lg flex-column">
+								<li class="nav-item">
+									<a href="/pages/projects/overview.html" class="nav-link"
+										>Overview</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/grid-view.html" class="nav-link"
+										>Grid View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/table-view.html" class="nav-link"
+										>Table View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/details.html" class="nav-link"
+										>Details</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/create-project.html" class="nav-link"
+										>Create Project</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link collapsed"
+							href="#sidebar-authentication"
+							data-bs-toggle="collapse"
+							role="button"
+							aria-expanded="false"
+							aria-controls="sidebar-authentication">
+							<i class="bi bi-lock"></i>
+							Authentication
+						</a>
+						<div class="collapse" id="sidebar-authentication">
+							<ul class="nav nav-lg flex-column">
+								<li class="nav-item">
+									<a href="/pages/projects/overview.html" class="nav-link"
+										>Overview</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/grid-view.html" class="nav-link"
+										>Grid View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/table-view.html" class="nav-link"
+										>Table View</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/details.html" class="nav-link"
+										>Details</a
+									>
+								</li>
+								<li class="nav-item">
+									<a href="/pages/projects/create-project.html" class="nav-link"
+										>Create Project</a
+									>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<hr class="navbar-divider" />
+		</div>
+		<div class="p-4 container-fluid" style="background: #f5f9fc">
+			<nav class="navbar navbar-expand bg-body-tertiary mb-3">
+				<div class="container-fluid" style="background: white">
+					<!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> -->
+          <button class="btn btn-outline-secondary d-lg-none me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSidebar" aria-controls="offcanvasSidebar">
+            <i class="bi bi-list"></i>
+          </button>
+      
+					<div
+						class="collapse navbar-collapse d-flex align-items-center"
+						id="navbarSupportedContent"
+						style="background: white">
+						<form class="d-flex me-auto" role="search">
+							<input
+								class="form-control"
+								type="search"
+								placeholder="Search"
+								aria-label="Search" />
+						</form>
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#">
+									<i class="bi bi-bell"></i>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">
+									<i class="bi bi-envelope"></i>
+								</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link"
+									href="#"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false">
+									<img
+										src="https:thispersondoesnotexist.com"
+										alt="mdo"
+										width="50"
+										height="50"
+										class="rounded-circle" />
+								</a>
+								<ul class="dropdown-menu dropdown-menu-end">
+									<li><a class="dropdown-item" href="#">Action</a></li>
+									<li><a class="dropdown-item" href="#">Another action</a></li>
+									<li><hr class="dropdown-divider" /></li>
+									<li>
+										<a class="dropdown-item" href="#">Something else here</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<div class="container d-flex flex-column align-items-center my-5 profile">
+        <img src="https:thispersondoesnotexist.com" width="100" class="rounded-circle" />
+
+        <div class="icons d-flex justify-content-evenly gap-3">
+          <div class="text-lg rounded-circle icon-circle">
+            <i class="bi bi-chat rounded-circle "></i>
+          </div>
+          <div class="text-lg rounded-circle icon-circle">
+            <i class="bi bi-telephone rounded-circle "></i>
+          </div>
+        </div>
+        
+        <span class="h2 mt-4">Alex Doe</span>
+        <span>Software Engineer @ Google</span>
+      </div>
+      <div class="row container-fluid">
+        <div class="col-xl-6 col-sm-12">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title text-center">Bio</h5>
+              <ul></ul>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ut distinctio est pariatur nisi animi accusantium officiis, a reprehenderit voluptatibus voluptas consequuntur nobis quisquam, vitae nam doloribus ipsa necessitatibus commodi dolore iure architecto iusto fugit voluptatem. Quam sit accusamus quisquam quia quidem numquam incidunt inventore, possimus fuga dolor, aperiam in!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 col-sm-12">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title text-center">Socials</h5>
+              <ul class="p-0" style="list-style-type:none">
+                <li><a href="javascript:void(0)">Github</a></li>
+                <li><a href="javascript:void(0)">Linkedin</a></li>
+                <li><a href="javascript:void(0)">Twitter</a></li>
+              </ul>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id hic reprehenderit culpa quisquam sit corporis porro nihil, enim accusamus inventore!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="table-responsive text-center">
+        <caption><span class="h2">Projects</span></caption>
+        <table class="table table-hover">
+          
+          <thead>
+            <tr>
+              <th scope="col">Project</th>
+              <th scope="col">Due Date</th>
+              <th scope="col">Status</th>
+              <th scope="col">Team</th>
+              <th scope="col">Progress</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>
+                <a href="javascript:void(0)">Project 1</a>
+              </th>
+              <td>12/05/2025</td>
+              <td>
+                <span class="badge text-warning p-0">Ongoing</span>
+              </td>
+              <td>
+                <img
+                  alt="image"
+                  src="https://thispersondoesnotexist.com" width="25"
+                  class="avatar avatar-md rounded-circle"
+                />
+                <img
+                  alt="image"
+                  src="https://thispersondoesnotexist.com" width="25"
+                  class="avatar avatar-md rounded-circle"
+                />
+                <img
+                  alt="image"
+                  src="https://thispersondoesnotexist.com" width="25"
+                  class="avatar avatar-md rounded-circle"
+                />
+              </td>
+              <td>
+                <div class="d-flex align-items-center">
+                  <span class="me-2">50%</span>
+                  <div>
+                    <div class="progress" style="width: 100px">
+                      <div
+                        class="progress-bar bg-warning"
+                        role="progressbar"
+                        style="width: 50%"
+                        aria-valuenow="50"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a href="javascript:void(0)">Project 2</a>
+              </th>
+              <td>10/03/2024</td>
+              <td>
+                <span class="badge text-danger p-0">At Risk</span>
+              </td>
+              <td>
+                <img
+                  alt="image"
+                  src="https://thispersondoesnotexist.com" width="25"
+                  class="avatar avatar-md rounded-circle"
+                />
+                <img
+                  alt="image"
+                  src="https://thispersondoesnotexist.com" width="25"
+                  class="avatar avatar-md rounded-circle"
+                />
+                <img
+                  alt="image"
+                  src="https://thispersondoesnotexist.com" width="25"
+                  class="avatar avatar-md rounded-circle"
+                />
+              </td>
+              <td>
+                <div class="d-flex align-items-center">
+                  <span class="me-2">12%</span>
+                  <div>
+                    <div class="progress" style="width: 100px">
+                      <div
+                        class="progress-bar bg-danger"
+                        role="progressbar"
+                        style="width: 12%"
+                        aria-valuenow="12"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a href="javascript:void(0)">Project 3</a>
+              </th>
+              <td>11/03/2024</td>
+              <td>
+                <span class="badge text-warning p-0">Ongoing</span>
+              </td>
+              <td>
+                <img
+                  alt="image"
+                  src="https://thispersondoesnotexist.com" width="25"
+                  class="avatar avatar-md rounded-circle"
+                />
+                <img
+                  alt="image"
+                  src="https://thispersondoesnotexist.com" width="25"
+                  class="avatar avatar-md rounded-circle"
+                />
+                <img
+                  alt="image"
+                  src="https://thispersondoesnotexist.com" width="25"
+                  class="avatar avatar-md rounded-circle"
+                />
+              </td>
+              <td>
+                <div class="d-flex align-items-center">
+                  <span class="me-2">80%</span>
+                  <div>
+                    <div class="progress" style="width: 100px">
+                      <div
+                        class="progress-bar bg-warning"
+                        role="progressbar"
+                        style="width: 80%"
+                        aria-valuenow="12"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a href="javascript:void(0)">Project 4</a>
+              </th>
+              <td>12/02/2024</td>
+              <td>
+                <span class="badge text-success p-0">Finished</span>
+              </td>
+              <td>
+                <img
+                  alt="image"
+                  src="https://thispersondoesnotexist.com" width="25"
+                  class="avatar avatar-md rounded-circle"
+                />
+                <img
+                  alt="image"
+                  src="https://thispersondoesnotexist.com" width="25"
+                  class="avatar avatar-md rounded-circle"
+                />
+                <img
+                  alt="image"
+                  src="https://thispersondoesnotexist.com" width="25"
+                  class="avatar avatar-md rounded-circle"
+                />
+              </td>
+              <td>
+                <div class="d-flex align-items-center">
+                  <span class="me-2">100%</span>
+                  <div>
+                    <div class="progress" style="width: 100px">
+                      <div
+                        class="progress-bar bg-success"
+                        role="progressbar"
+                        style="width: 100%"
+                        aria-valuenow="100"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a href="javascript:void(0)">Project 5</a>
+              </th>
+              <td>9/03/2024</td>
+              <td>
+                <span class="badge text-success p-0">Finished</span>
+              </td>
+              <td>
+                <img
+                  alt="image"
+                  src="https://thispersondoesnotexist.com" width="25"
+                  class="avatar avatar-md rounded-circle"
+                />
+                <img
+                  alt="image"
+                  src="https://thispersondoesnotexist.com" width="25"
+                  class="avatar avatar-md rounded-circle"
+                />
+                <img
+                  alt="image"
+                  src="https://thispersondoesnotexist.com" width="25"
+                  class="avatar avatar-md rounded-circle"
+                />
+              </td>
+              <td>
+                <div class="d-flex align-items-center">
+                  <span class="me-2">100%</span>
+                  <div>
+                    <div class="progress" style="width: 100px">
+                      <div
+                        class="progress-bar bg-success"
+                        role="progressbar"
+                        style="width: 100%"
+                        aria-valuenow="100"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a href="javascript:void(0)">Project 6</a>
+              </th>
+              <td>10/03/2024</td>
+              <td>
+                <span class="badge text-warning p-0">Ongoing</span>
+              </td>
+              <td>
+                <img
+                  alt="image"
+                  src="https://thispersondoesnotexist.com" width="25"
+                  class="avatar avatar-md rounded-circle"
+                />
+                <img
+                  alt="image"
+                  src="https://thispersondoesnotexist.com" width="25"
+                  class="avatar avatar-md rounded-circle"
+                />
+                <img
+                  alt="image"
+                  src="https://thispersondoesnotexist.com" width="25"
+                  class="avatar avatar-md rounded-circle"
+                />
+              </td>
+              <td>
+                <div class="d-flex align-items-center">
+                  <span class="me-2">73%</span>
+                  <div>
+                    <div class="progress" style="width: 100px">
+                      <div
+                        class="progress-bar bg-warning"
+                        role="progressbar"
+                        style="width: 73%"
+                        aria-valuenow="73"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+        </table>
+      </div>
+		</div>
+	</body>
+</html>
