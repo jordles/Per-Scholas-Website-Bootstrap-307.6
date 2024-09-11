@@ -4,9 +4,9 @@ A rendering of my wireframes utilizing the bootstrap framework.
 Clicking the logo will bring you back to index. Navigate to users on the left sidebar and click profile if you want to access user page 
 
 
-![]()
+![](https://raw.githubusercontent.com/jordles/Per-Scholas-Website-Bootstrap-307.6/main/wireframe-admin-user.svg)
 
-Demo Link Here: 
+[Demo Link Here](https://jordles.github.io/Per-Scholas-Website-Bootstrap-307.6/)
 
 ## Tech Used
 HTML CSS Bootstrap
